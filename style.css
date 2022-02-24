@@ -1,0 +1,428 @@
+body {
+    margin: 0;
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    color: #5d4647;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+
+
+.container__hero {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.container__hero.dark {
+    max-width: 1300px;
+}
+
+.container__hero.cont {
+    max-width: 1500px;
+}
+
+
+.container.price {
+    max-width: 1400px;
+    
+}
+
+
+.header {
+    padding: 20px 0;
+    height: 10vh;
+    z-index: 100;
+    width: 100%;
+    background-color: #e8ddd4;
+    display: flex;
+    align-items: center;
+
+}
+
+.header__light {
+    padding: 20px 0;
+    height: 10vh;
+    z-index: 100;
+    width: 100%;
+    background-color: #fffbf7;
+    display: flex;
+    align-items: center;
+
+}
+
+.header__inner {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.nav {
+    font-size: 16px;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    color: #5d4647;
+    text-decoration: none;
+    transition: color .2s linear;
+    position: relative;
+    font-size: 20px;
+}
+
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #5d4647;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .2s linear;
+    
+}
+
+.nav__link:hover:after {
+    opacity: 1;
+}
+
+.hero {
+    background-color: #fffbf7;
+    width: 100%;
+    height: 80vh;
+    padding: 60px 0;
+
+}
+
+.hero.dark {
+    background-color: #e8ddd4;
+}
+
+.hero__inner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+}
+
+.hero__inner.dark {
+    justify-content: space-between;
+
+}
+
+.hero__inner.contact {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.hero__inner.price {
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding-top: 7%;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.hero__text {
+    position: relative;
+    font-size: 52px;
+    font-weight: 400;
+    text-align: center; 
+    padding-bottom: 10px;
+}
+
+.hero__text:nth-child(1) {
+    margin-bottom: 10px;
+}
+
+.hero__text.price {
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+.hero__textual {
+    margin-left: 200px;
+}
+
+.hero__textual.price {
+    margin-left: 0px;
+    flex: 1 1 0;
+    padding-right: 60px;
+}
+
+.hero__textual.contact {
+    margin-right: 0px;
+    margin-top: 200px;
+
+}
+
+
+.about__btn {
+    position: absolute;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: #5d4647;
+    background-color: #e8ddd4;
+    border: 1px solid #5d4647;
+    padding: 7px 70px;
+    border-radius: 50px;
+    /* box-shadow: 3px 7px #5d4647; */
+    transition: transform linear .2s;
+    z-index: 2;
+    left: 1100px;
+    
+}
+.about__btn-shadow {
+    position: absolute;
+    top: 752px;
+    left: 1107px;
+    height: 47px;
+    width: 245px;
+    z-index: 1;
+    background-color: #5d4647;
+    border-radius: 50px; 
+}
+
+.about__btn:hover {
+    transform: translate3d(7px, 7px, 12px);
+}
+
+
+.btn {
+    position: absolute;
+    left: 150px;
+    top: 220px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: #5d4647;
+    background-color: #e8ddd4;
+    border: 1px solid #5d4647;
+    padding: 7px 70px;
+    border-radius: 50px;
+    /* box-shadow: 3px 7px #5d4647; */
+    transition: transform linear .2s;
+    z-index: 2; 
+}
+
+.btn__shadow {
+    position: absolute;
+    height: 47px;
+    width: 245px;
+    left: 159px;
+    top: 228px;
+    z-index: 1;
+    background-color: #5d4647;
+    border-radius: 50px;
+
+}
+
+.btn:hover {
+    transform: translate3d(7px, 7px, 12px);
+}
+
+.btn.port {
+    left: 43%;
+    top: 135%;
+}
+
+.btn__shadow.port {
+    left:43.4%;
+    top: 135.8%;
+    
+}
+
+.about__btn.price {
+    top: 63%;
+    left: 65%;
+}
+
+.about__btn-shadow.price {
+    top: 63.8%;
+    left: 65.4%;
+}
+
+.footer {
+    
+    padding: 20px 0;
+    height: 10vh;
+    z-index: 100;
+    width: 100%;
+    background-color: #e8ddd4;
+    display: flex;
+    align-items: center;
+
+}
+
+.footer.light {
+    background-color: #fffbf7;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footer__text {
+    font-size: 20px;
+}
+
+.img__footer {
+    width: 40px;
+}
+
+.social__footer {
+    width: 40px;
+}
+
+
+
+.social__footer:nth-child(1) {
+    margin-right: 5px;
+}
+
+.about__img {
+    width: auto;
+    border-radius: 6px;
+    height: 100%;
+    max-height: 600px;
+}
+
+.portfolio {
+    background-color: #fffbf7;
+    padding-bottom: 130px;
+}
+
+.portfolio__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 60px 0;
+}
+
+
+
+.img__wrap {
+    max-width: 23%;
+    flex-grow: 1;
+}
+
+.portfolio__img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    transition: transform linear .4s;
+}
+
+.portfolio__img:hover {
+    transform: scale(1.17);
+    cursor: pointer;
+}
+
+.hero__text.pad {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.footer.pad {
+    margin-top: 0px;
+}
+
+.pricing {
+    flex: 1 1 0;
+    padding-left: 60px;
+}
+
+.pricing__item {
+    font-size: 25px;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+}
+
+.subtitle {
+    font-weight: 400;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+
+.social-text {
+    position: absolute;
+    text-decoration: none;
+    color: #5d4647;
+    font-size: 24px;
+    font-weight: 400;
+    top: -8px;
+    
+    left: 40px;
+}
+
+.relative {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.social__icon {
+    width: 25px;
+}
+
+
+.klaipeda {
+    margin-left: 30px;
+    margin-top: 200px;
+}
+
+.pin {
+    
+    width: 55px;
+    margin-left: 85px;
+    margin-bottom: 15px;
+    
+}
+
+.klp-text {
+    color: #5d4647;
+    font-size: 24px;
+    font-weight: 400;
+}
